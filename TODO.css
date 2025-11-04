@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Raleway:wght@500;600;700&display=swap');
+
+.contain {
+    max-width: 100vw;
+    height: 100vh;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    width: 30%;
+ 
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px grey;
+     
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 70px;
+}
+
+.myinput {
+    border: 2px solid black;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    
+}
+.pic img {
+    width: 30px;
+    height: 30px;
+}
+
+.pic {
+    display: flex;
+    align-items: center;
+}
+
+.myinput input {
+    outline: none;
+    border: none;
+
+    background-color: #EEEEEE;
+    flex: 1;
+}
+
+button {
+    border-radius: 20px;
+    padding: 15px 32px 15px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    background-color: orange;
+    cursor: pointer;
+}
+ .ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 35px; /* space for circle */
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* blank circle before text */
+.ul::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+  background-size: cover;
+  background-position: center;
+}
+
+/* when clicked (done = false → class "ch") — show tick */
+.ch {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 35px;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ch::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-image: url('./assets/tick.png'); /* ✅ tick image path */
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+
+.boss img{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+ 
+.check::before{
+    background-image: url(assets/tick.png);
+    background-size:cover;
+}
+.boss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.ch::before {
+  background-image: url(./assets/tick.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  border: none;
+}
